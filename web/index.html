@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GraphPulse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&family=JetBrains+Mono:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <p class="eyebrow">Network influence</p>
+        <h1>GraphPulse</h1>
+        <p>Compute PageRank for directed graphs.</p>
+      </header>
+      <section class="panel">
+        <textarea id="edgesInput" rows="6">A,B
+B,C
+C,A
+C,D
+D,E
+E,C</textarea>
+        <div class="grid">
+          <label>Iterations <input id="iterInput" type="number" value="20" /></label>
+          <label>Damping <input id="dampingInput" type="number" step="0.05" value="0.85" /></label>
+        </div>
+        <button id="rankButton">Rank nodes</button>
+      </section>
+      <section class="panel">
+        <h2>Ranks</h2>
+        <ul id="results"></ul>
+      </section>
+    </main>
+    <div class="pulse"></div>
+    <script src="app.js"></script>
+  </body>
+</html>
