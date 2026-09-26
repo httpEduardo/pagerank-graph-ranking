@@ -1,11 +1,13 @@
-# GraphPulse
+# Pagerank Graph Ranking
 
-GraphPulse ranks nodes with PageRank and highlights influence in a directed graph.
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?logo=python&logoColor=white)
+
+Pagerank Graph Ranking ranks nodes with PageRank and highlights influence in a directed graph.
 
 ## Quick start
 
 ```bash
-python -m app.server --port 5173
+python -m pagerank_graph_ranking.server --port 5173
 ```
 
 Open http://localhost:5173
